@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/app.png" type="image/x-icon">
+    <link rel="icon" href="assets/app.png" type="image/x-icon">
+    <title> Griddy </title>
+  </head>
+  <body>
+    <div id="app" v-cloak>
+
+        <div class="jumbotron">
+
+        </div>
+        
+        <div class="container grid--layout spacing-top">
+
+            <div class="sidebar spacing-top">
+              <div class="sidebar__block"> 
+                  <div class="sidebar__title"> Sort Apps By </div>
+                  <div class="sidebar__item"> Most Popular </div>
+                  <div class="sidebar__item"> Alphabetical </div>
+                  <div class="sidebar__item"> Recently Added </div>
+                  <div class="sidebar__item"> Upcoming </div>
+              </div>
+              <div class="sidebar__block"> 
+                  <div class="sidebar__title"> Filter by Category </div>
+                  <div class="sidebar__item"> Compact </div>
+                  <div class="sidebar__item"> Large </div>
+                  <div class="sidebar__item"> Sedan </div>
+                  <div class="sidebar__item"> Truck </div>
+                  <div class="sidebar__item"> Van </div>
+              </div>
+            </div>
+
+            <div class="grid--card spacing-top">
+              <div class="card card--grid" v-for="item in msg">
+                <img class="card__image" src="assets/hills.svg" />
+                <div> {{ item.model }} </div>
+                <div> {{ item.make }} </div>
+                <div> {{ item.year }} </div>
+              </div>
+            </div>
+
+        </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+export const items = [{
+    "id": 1,
+    "make": "Plymouth",
+    "model": "Breeze",
+    "year": 1998
+  }, {
+    "id": 2,
+    "make": "Volkswagen",
+    "model": "Eurovan",
+    "year": 2003
+  }, {
+    "id": 3,
+    "make": "Chevrolet",
+    "model": "Malibu",
+    "year": 2012
+  }, {
+    "id": 4,
+    "make": "Hyundai",
+    "model": "Equus",
+    "year": 2012
+  }, {
+    "id": 5,
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 1983
+  }, {
+    "id": 6,
+    "make": "Toyota",
+    "model": "Tercel",
+    "year": 1993
+  }, {
+    "id": 7,
+    "make": "Lincoln",
+    "model": "Town Car",
+    "year": 1986
+  }, {
+    "id": 8,
+    "make": "Toyota",
+    "model": "Sequoia",
+    "year": 2005
+  }, {
+    "id": 9,
+    "make": "Volkswagen",
+    "model": "GTI",
+    "year": 1985
+  }, {
+    "id": 10,
+    "make": "Dodge",
+    "model": "Ram 1500 Club",
+    "year": 2000
+  }]

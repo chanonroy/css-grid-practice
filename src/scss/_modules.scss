@@ -1,0 +1,74 @@
+.jumbotron {
+    height: 500px;
+    width: 100%;
+    background-color: mediumseagreen;
+}
+
+.grid {
+
+    &--card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+
+        @media screen and (max-width: $break-md) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: $break-sm) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &--layout {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 4fr;
+    }
+
+}
+
+.card {
+    // basic card class with padding
+    background-color: white;
+    box-shadow: $shadow-default;
+    border-radius: $border-radius-default;
+    padding: 20px;
+
+    &--grid {
+        // grid items
+        text-align: center;
+        padding: 40px;
+    }
+
+    &__image {
+        height: 80px;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.sidebar {
+
+    &__block {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        color: mediumseagreen;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        margin: 10px 0;
+        cursor: pointer;
+        transition: $transition-custom;
+        &:hover {
+            color: deepskyblue;
+        }
+    }
+
+}
