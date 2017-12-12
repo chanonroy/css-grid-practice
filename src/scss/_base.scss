@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 $break-lg: 1200px;
 $break-md: 992px;
 $break-sm: 768px;
 $break-xs: 556px;
 
-$spacing: 30px;
+$spacing: 40px;
 
+$color-primary: mediumseagreen;
+$color-active: deepskyblue;
 $color-bg: whitesmoke;
+$color-font: #384047;
 
 $shadow-default: 0 1px 1px 0 rgba(0,0,0,.15);
 $border-radius-default: 3px;
@@ -17,6 +20,7 @@ $transition-custom: all 0.2s ease;
 body {
     margin: 0;
     margin-bottom: 20px;
+    color: $color-font;
     font-family: 'Open Sans', sans-serif;
     background-color: $color-bg;
     ul {

@@ -1,0 +1,8 @@
+.el-input {
+    margin-bottom: 20px;
+    &__inner {
+        &:focus {
+            border-color: $color-primary !important;
+        }
+    }
+}

@@ -11,13 +11,16 @@
   <body>
     <div id="app" v-cloak>
 
-        <div class="jumbotron">
-
+        <div class="jumbo">
+          <div class="jumbo__container">
+            <div class="jumbo__title"> Griddy Filtering System </div>
+            <div class="jumbo__subtitle"> Explore more than 100+ items </div>
+          </div>
         </div>
         
         <div class="container grid--layout spacing-top">
 
-            <div class="sidebar spacing-top">
+            <div class="sidebar">
               <div class="sidebar__block"> 
                   <div class="sidebar__title"> Sort Apps By </div>
                   <div class="sidebar__item"> Most Popular </div>
@@ -33,15 +36,28 @@
                   <div class="sidebar__item"> Truck </div>
                   <div class="sidebar__item"> Van </div>
               </div>
-            </div>
+            </div> <!-- sidebar -->
 
-            <div class="grid--card spacing-top">
-              <div class="card card--grid" v-for="item in msg">
-                <img class="card__image" src="assets/hills.svg" />
-                <div> {{ item.model }} </div>
-                <div> {{ item.make }} </div>
-                <div> {{ item.year }} </div>
-              </div>
+            <div>
+              <el-input
+                v-model="query"
+                placeholder="Search over 100+ items"
+                suffix-icon="el-icon-search">
+              </el-input>
+              <div class="grid--card">
+
+                <div class="card card--grid" v-if="item_list.length > 0" v-for="item in item_list">
+                  <img class="card__image" src="assets/hills.svg" />
+                  <div> {{ item.model }} </div>
+                  <div> {{ item.make }} </div>
+                  <div> {{ item.year }} </div>
+                </div>
+                <div v-if="item_list.length == 0">
+                  No Results
+                </div>
+
+              </div> <!-- grid -->
+
             </div>
 
         </div>
